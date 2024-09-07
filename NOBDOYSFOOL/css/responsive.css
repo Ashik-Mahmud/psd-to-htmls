@@ -1,0 +1,61 @@
+@media screen and (max-width:1700px){
+    .userArea{
+        width: 1000px;
+    }
+
+}
+@media screen and (max-width:1400px){
+    .userArea{
+        width: 800px;
+    }
+
+}
+@media screen and (max-width:1200px){
+    .userArea{
+        width:600px;
+    }
+    .leftDesc{
+        float: none;
+        margin-bottom: 160px;
+      left: 250px;
+    }
+    .slider{
+       float: none;
+    }
+    .sliderItem{
+        width: auto;
+    }
+    .blockArea{
+        float: none;
+      
+    }
+    .imgArea{
+        float: none;
+        left: 212px;
+    }
+    .blockArea .blockText{
+        float: none;
+        width: auto;
+    }
+    .contactArea{
+        width: auto;
+    }
+    .get-in-touch .leftText{
+        width: auto;
+        float: none;
+       }
+       .footerBlock{
+        float: none;
+        left: 300px;
+    }
+       
+ .get-in-touch{
+     width: auto;
+ }
+}
+@media screen and (max-width:900px){
+
+    .sliderItem{
+        width: auto;
+    }
+}

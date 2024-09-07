@@ -1,0 +1,62 @@
+
+/* MAKE CSS CLASS LIKE BOOTSTRAP */
+
+.bg-transparent-dark{
+    background: #292b2c !important;
+    border-bottom: 3px solid #008ed6 !important;
+    opacity: 0.7;
+}
+.bg-primary-soft{
+    background-color: #007bff !important;
+}
+.card-form{
+    opacity: 0.8;
+}
+.bg-dark-dark{
+    background: #333 !important;
+}
+
+
+
+
+
+/* CODE FOR HEADER SECTION  */
+html{
+    scroll-behavior: smooth;
+}
+.header-section{
+    background: url(../images/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+}
+.check-icon .fa-check{
+    background: white;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #008ed6;
+    font-weight: bold;
+
+}
+.check-icon-explore .fa-check{
+    background: rgb(0, 0, 0);
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+.header-section-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}

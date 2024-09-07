@@ -1,0 +1,69 @@
+// Hero Part Design 
+
+section#hero {
+    position: relative;
+    padding-top: 9rem;
+
+    .hero-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
+
+        .hero-content-text {
+            position: relative;
+            width: 40%;
+
+            @media (max-width: 768px) {
+                width: 55%;
+            }
+
+            @media (max-width: 500px) {
+                width: 100%;
+                order: 2;
+                margin-top: 3rem;
+            }
+
+            h1 {
+                font-weight: var(--font-weight-bolder);
+                font-size: var(--font-size-biggest);
+                color: var(--title-color);
+            }
+
+            p {
+                line-height: 1.4;
+                color: var(--text-color);
+                font-size: var(--normal-font-size);
+                margin: 1rem 0rem;
+                padding-right: 5rem;
+                margin-bottom: 2rem;
+                 @media (max-width: 500px) {
+                      padding-right: 1rem;
+                      margin-bottom: 1rem;
+                 }
+            }
+
+            a {
+                @include buttonStyle;
+            }
+
+        }
+
+        .hero-content-img {
+            width: 55%;
+            position: relative;
+
+            @media (max-width: 768px) {
+                width: 45%;
+            }
+            @media (max-width: 500px) {
+                width: 100%;
+                order: 1;
+            }
+        }
+    }
+}

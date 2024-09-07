@@ -1,0 +1,50 @@
+#contact{
+    position: relative;
+    .contact-wrapper{
+        position: relative;
+        .contact-content{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 488px) {
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 2rem;
+            }
+            .content-text{
+                position: relative;
+                &:first-child{
+                width: 80%;
+                }
+                &:nth-child(3){
+                    text-align: right;
+                    @media (max-width: 488px) {
+                        text-align: left;
+                    }
+                }
+                h1{
+                    font-size: var(--h2-font-size);
+                    color: var(--title-color);
+                    font-weight: var(--font-weight-bold);
+                    margin-bottom: 1rem;;
+                }
+                ul{
+                    li{
+                        padding: .2rem 0rem;
+                        strong{
+                            font-weight: var(--font-weight-bold);
+                            color: var(--title-color);
+                        }
+                    }
+                }
+                a{
+                    @include buttonStyle;
+                }
+            }
+        }
+    }
+}

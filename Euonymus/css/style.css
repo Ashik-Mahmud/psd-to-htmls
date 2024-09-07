@@ -1,0 +1,330 @@
+:root{
+    --header-color:#2AA2D4;
+}
+h1,h3,h4,h5,h6,h2{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: url(../images/pic2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body-all-content{
+   /* border: 3px solid rgb(226, 221, 221); */
+   box-shadow: 1px 1px 14px rgb(214, 214, 214);
+   background: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    margin: 2px 0px;
+}
+.top-header-section{
+    background: var(--header-color);
+    padding: 0px 0px;
+    position: relative;
+}
+.top-header-content{
+    display: flex;
+    justify-content: inherit;
+}
+.social-icon {
+    width: 1134px;
+    position: relative;
+    padding-top: 4px;
+}
+.social-icon i{
+    background: white;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 15px;
+    transition: 0.5s;
+
+}
+.social-icon i:hover{
+    color: var(--header-color);
+}
+.topbar-menu{
+    width: 600px;
+    position: relative;
+
+}
+.topbar-menu::after{
+    content: "+";
+    width: 30px;
+    height: 30px;
+    background: var(--header-color);
+    position: absolute;
+    right: 2px;
+    bottom: -25px;
+    border-radius: 0px 0px 30% 30%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.topbar-menu ul li a{
+    color: ivory;
+    display: inline-block;
+    margin-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo-area{
+    width: 760px;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.logo-area h1{
+    
+    padding-right: 10px;
+    
+}
+.logo-area h1 b{
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400 !important;
+}
+.logo-tagline
+{
+    margin-top: 25px;
+}
+.design{
+   color: #8f8f8f;
+}
+.search-area{
+    width: 400px;
+    position: relative;
+    padding-top: 28px;
+}
+.search-area input{
+    width: 70%;
+    padding: 12px;
+    border-radius: 5px 0px 0px 5px;
+    background: black;
+    margin: 0;
+    border: none;
+    color: white;
+}
+::placeholder{
+    color: white;
+    font-size: 17px;
+}
+.search-area button{
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-left: -5px;
+    border: none;
+    background: var(--header-color);
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+}
+.logo-wrapper{
+    display: flex;
+    padding: 32px 0px;
+}
+.primary-menu-content{
+    background: rgb(14, 11, 11);
+    box-shadow: 1px 5px 25px rgb(158, 158, 158);
+    position: relative;
+}
+.uk-tab > * > a {
+   
+    border-bottom: 4px solid transparent;
+  
+}
+.primary-menu-content ul{
+    padding: 0;
+    margin:0px;
+
+}
+.primary-menu-content ul li a{
+    padding: 15px 20px;
+    font-weight: bold;
+}
+img{
+    object-fit: cover;
+}
+.container{
+    width: 1250px;
+    /*! margin: ; */
+    margin-left: -23px;
+}
+* + .uk-margin {
+    margin-top: -20px !important;
+    z-index: 54;
+    position: relative;
+    margin-left: 5px;
+}
+.uk-dotnav > .uk-active > * {
+    background-color: rgb(59, 69, 80);
+    border-color: transparent;
+}
+.uk-dotnav > * > *  {
+ 
+    border: 1px solid rgb(255, 255, 255);
+
+}
+.slider-img{
+    width: 48px;
+    height: 48px;
+    background: url(../images/images.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 9px;
+}
+.slider-content {
+    width: 201px;
+    margin-left: 13px;
+}
+.recent-project-section{
+    padding: 100px 0px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.services-area
+{
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 25px;
+}
+.welcome-message h2{
+    border-bottom: 1px solid rgb(236, 232, 232);
+    padding-bottom: 10px;
+}
+.multi-area-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.team-content{
+    width: 300px;
+    position: relative;
+}
+.team-wrapper{
+    display: flex;
+}
+.team-headline h2{
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 3rem;
+    position: relative;
+}
+.team-headline h2::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: coral;
+    margin: 20px auto;
+    
+}
+.team-section{
+    padding: 50px 0px 150px 0px;
+    margin-top: 100px;
+
+}
+.blog-img{
+    width: 48px;
+    height: 48px;
+    background: rgb(255, 255, 255);
+    margin-top: 9px;
+}
+.footer-content{
+    width: 250px;
+    position: relative;
+}
+.first-blog{
+    display: flex;
+    border-bottom: 1px solid rgb(95, 91, 91);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+.blog-text{
+    width: 225px;
+    margin-left: 14px;
+}
+.quick-links{
+    margin: 0;
+    padding: 0;
+}
+.quick-links li{
+
+list-style-type:none;
+border-bottom: 1px solid rgb(95, 90, 90);
+padding: 5px 0px;
+}
+.quick-links li a{
+    text-decoration: none;
+    color: rgb(197, 193, 193);
+   
+}
+.footer-content h3{
+    color: rgb(247, 247, 247);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+form input,
+form textarea{
+    width: 100%;
+    margin-bottom: 8px;
+    padding:13px;
+    border-radius: 2px;
+    background: #111;
+    border: none;
+    color: cornsilk;
+}
+form input[type="submit"]{
+    width: 30%;
+    cursor: pointer;
+    color: white;
+    border-radius: 0px;
+}
+form input[type="submit"]:hover{
+    background: coral;
+}
+.footer-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid;
+    margin-top: 30px;
+}
+.footer-section
+{
+    background: black;
+    color: rgb(151, 151, 151);
+    position: relative;
+    padding: 50px;
+    padding-bottom: 0px;
+}
+.copyright-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    border-top: 1px solid #8f8f8f;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.footer-scroll-up-img{
+
+    position: fixed;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+}
+.active-scroll{
+    opacity: 0;
+    transition: 0.5s;
+}

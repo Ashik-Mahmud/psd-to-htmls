@@ -1,0 +1,100 @@
+#header{
+    position: fixed;
+    padding: 1rem 0rem;
+    width: 100%;
+    z-index: 1;
+    background: var(--body-color);
+    transition: 0.3s;
+    
+    .header-wrapper{
+        position: relative;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .logo{
+                // width: 120px;
+                height: auto;
+                position: relative;
+            }
+            .primary-menu{
+                position: relative;
+                @media (max-width: 768px) {
+                    display: block;
+                    width: 70%;
+                   min-height: auto;
+                   z-index: 2;
+                   left: 50%;
+                   transform: translateX(-50%);
+                   background: var(--white-color);
+                   box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.192);
+                   padding: 2rem;
+                   position: fixed;
+                   top: -50%;
+                   border-radius: 10px;
+                   transition: all .3s ease-in;
+
+                }
+                ul{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    @media (max-width: 768px) {
+                       flex-direction: column;
+                    }
+                    li{
+                        padding: 0rem 1.3rem;
+                         @media (max-width: 768px) {
+                            padding: .5rem 0rem;
+                         }
+                        a{
+                            color: var(--title-color);
+                            font-weight: var(--font-weight-bold);
+                        }
+                        .theme-toggle {
+                            background: none;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            @media (max-width: 768px) {
+                                position: absolute;
+                                right: 0px;
+                                top: 0px;
+                            }
+                            i{
+                                font-size: 2.2rem;
+                                color: var(--title-color);
+                            }
+                        }
+                    }
+                }
+            }
+            .primary-menu.active{
+                top: 10%;
+            }
+            .delivery-btn{
+              @include buttonStyle;
+              @media (max-width: 768px) {
+                  display: none;
+              }
+            }
+            .humberger{
+                display: grid;
+                place-items: center;
+                cursor: pointer;
+                display: none;
+                color: var(--title-color);
+                @media (max-width: 768px) {
+                    display: block;
+                }
+                i{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+#header.active{
+    box-shadow: 0rem 0rem 3rem rgba(0,0,0,0.1);
+}

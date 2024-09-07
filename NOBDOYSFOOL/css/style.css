@@ -1,0 +1,496 @@
+/* UNIVERSAL CSS CODE */
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+.dropdown{
+    position: absolute;
+    background: rgb(216, 213, 213);
+    padding: 0px;
+    z-index: 5;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .6s;
+}
+.dropdown li{
+    display: block !important;
+}
+.dropdown li a{
+    padding: 10px 55px !important;
+    display: block !important;
+
+}
+.dropdown li a:hover,
+.dropdown li a:active{
+    background: black;
+    border: none !important;
+    color: rgb(255, 255, 255);
+}
+.toggle{
+    opacity: 1;
+    height: 200px;
+}
+
+/* HEADER SECTION  DESIGN  */
+
+.container{
+    width: 1700px;
+    margin: auto;
+}
+header{
+    background-color: black;
+    color: white;
+    height:60px;
+    overflow: hidden;
+    width: 100%;
+}
+.userArea{
+    width: 1300px;
+    position: relative;
+    float: left;
+    top: 20px;
+   
+}
+.user{
+    padding: 0;
+}
+.userArea .user li{
+    list-style: none;
+    display: inline-block;
+   
+}
+.userArea .user li a{
+    
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0px 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border-right: 1px solid white;
+}
+.socialIcon {
+    margin-left: 144px;
+}
+.socialArea{
+    width: 400px;
+    float: left;
+    position: relative;
+    top:12px;
+}
+.socialIcon .fab,.socialIcon .fa{
+    padding: 10px 10px;
+    background-color: gray;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.socialIcon .fab:hover,.socialIcon .fa:hover{
+   background-color: tomato;
+}
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu li a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 550;
+    color: rgb(88, 83, 83);
+    padding: 10px 15px;
+    padding-left: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 23px;
+}
+
+.menu{
+    padding: 0;
+    border-radius: 5px;
+}
+hr{
+    height: 8px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    position: relative;
+    top: -8px;
+    z-index: -5;
+    margin-bottom: 50px;
+}
+
+.menu li a:focus{
+    border-bottom: 8px solid #0099ff;
+    color: rgb(197, 192, 192);
+    
+}
+.first{
+    border-bottom: 8px solid #0099ff;
+}
+
+.logoSection{
+    width: 1300px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.logoSection h1{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: rgb(75, 73, 73);
+}
+.logoSection small{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(136, 136, 136);
+}
+.searchSection{
+    width: 392px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.searchSection input{
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 84%;
+    border-radius: 5px;
+}
+.searchSection button{
+    padding: 10px 15px;
+    border: none;
+    background-color: #0099ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.middleSection{
+    clear: both;
+    background-color: #f1f1f1;
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+ 
+}
+.leftDesc{
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    top: 127px;
+}
+.leftDesc h1{
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    color: rgb(71, 70, 70);
+}
+.leftDesc p{
+    width: 400px;
+    font-size: 18px;
+    font-family: monospace;
+    margin-bottom: 20px;
+    color: rgb(100, 93, 93);
+}
+.leftDesc button{
+    background-color: #0099ff;
+    border: none;
+    padding: 8px 15px;
+    color: rgb(212, 212, 212);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.slider{
+    width: 1095px;
+    position: relative;
+    background-color: black;
+    height:600px;
+    float: left;
+    overflow: hidden;
+    user-select: none;
+}
+.sliderItem{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.opacity{
+    opacity: 1;
+}
+.sliderItem img{
+    width: 100%;
+    height: 100%;
+}
+.sliderBtn{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 0px 5px ;
+   
+}
+.sliderBtn input{
+    cursor: pointer;
+}
+.serviceArea {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+    width: 100%;
+  
+    overflow: hidden;
+}
+.imgArea{
+    width: 700px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.imgArea img{
+    width: 100%;
+    height: 100%;
+}
+
+.blockArea{
+    width: 994px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    left: 105px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.blockArea .blockText{
+    width: 360px;
+    float: left;
+    margin: 25px;
+    overflow: hidden;
+}
+.blockArea .blockText .images{
+    width: 150px;
+    height: 120px;
+    background:url(../images/laptop-2838921_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.blockArea .blockText h3{
+   font-size: 22px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: rgb(66, 61, 61);
+}
+.blockArea .blockText p{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(146, 141, 141);
+ }
+ .contactArea{
+    clear: both;
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+ }
+ .get-in-touch{
+    background: rgb(241, 238, 238);
+    padding: 18px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    border-left: 8px solid #0099ff;
+    padding-left: 27px;
+
+ }
+ .get-in-touch .leftText{
+     width: 1267px;
+     float: left;
+     position: relative;
+     overflow: hidden;
+    }
+    .get-in-touch .leftText h1{
+        color: rgb(92, 92, 92);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .get-in-touch .leftText samp{
+        font-size: 17px;
+        color: rgb(83, 83, 83);
+    }
+    .get-in-touch .rightBtn{
+        width: 300px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+    }
+    .get-in-touch .rightBtn button{
+        font-size: 17px;
+        width: 100%;
+        padding:12px 25px;
+        border: none;
+        background: #0099ff;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 7px;
+    }
+    footer{
+        background: black;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 25px;
+        color: white;
+    }
+    .footerBlock{
+        width: 400px;
+        position: relative;
+        overflow: hidden;
+        float: left;
+        margin: 10px;
+    }
+    .aboutUs{
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+       
+    }
+    .footerimg {
+        width: 280px;
+        height: 140px;
+        border: 1px solid white;
+        margin-bottom: 16px;
+        background: url(../images/woman-2728727_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 5px;
+    }
+    .aboutUs h3{
+        font-size:3rem;
+        font-family: monospace;
+        margin-bottom: 25px;
+    }
+    .aboutUs p{
+        font-size:16px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-bottom: 25px;
+    }
+    .aboutUs a{
+      text-decoration: none;
+      color: #0099ff;
+      display: block;
+      text-align: right;
+    }
+    .QuickLink h3{
+        font-size:3rem;
+        font-family: monospace;
+        margin-bottom: 25px;
+    }
+    .QuickLink .quick{
+        padding: 0;
+    }
+    .QuickLink .quick li{
+        list-style-type:none;
+        border-bottom: 1px solid rgb(39, 38, 38);
+        padding: 6px;
+    }
+    .QuickLink .quick li a{
+        text-decoration: none;
+        color: #0099ff;
+        display: inline-block;
+        padding: 4px 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .fas{
+        color: gray;
+        font-size: 13px;
+    }a
+    .blogPost
+    {
+        width: 80%;
+        position: relative;
+        overflow: hidden;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 52px;
+    }
+    .blogPost {
+        margin-left: 40px;
+    }
+    .blogPost>h3
+    {
+        font-size:2.5rem;
+        font-family: monospace;
+        margin-bottom: 25px;
+    }
+    .blogPost .firstPost h3{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .blogPost .firstPost a{
+       text-decoration: none;
+       color: #0099ff;
+       margin: 8px 0px;
+       display: block;
+       text-align: right;
+    }
+    .blogPost .SecondPost h3{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .blogPost .SecondPost a{
+       text-decoration: none;
+       color: #0099ff;
+       margin: 8px 0px;
+       display: block;
+       text-align: right;
+    }
+    .contactUs h3{
+        font-size:2.5rem;
+        font-family: monospace;
+        margin-bottom: 25px;
+    }
+    .submitForm input,
+    .submitForm textarea{
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        background: #232323;
+        color: wheat;
+        border: none;
+    }
+    .submitForm button{
+        padding: 8px 15px;
+        cursor: pointer;
+        background: #0099ff;
+        color: white;
+        font-weight: bold;
+        border-radius: 6px;
+        border: none;
+    }
+    .contactUs {
+        margin-left: 71px;
+    }

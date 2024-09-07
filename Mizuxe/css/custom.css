@@ -1,0 +1,67 @@
+/* CUSTOM BOOTSTRAP */
+.font-size-lg{
+    font-size: 1.7rem;
+}
+.font-size-sm{
+    font-size: 1.2rem;
+}
+.font-size-md{
+    font-size: 1.4rem;
+}
+.border-bottom-info-3{
+    box-shadow: 2px 3px 4px #6AAFB6;
+}
+
+.bg-white-soft{
+    background: rgba(255, 255, 255, 0.938);
+}
+.no-radius{
+    border-radius: 0px !important;
+}
+.user-select-none{
+    user-select: none;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.font-weight-bold-soft{
+    font-weight: 500 !important;
+}
+
+
+/* CSS */
+.navbar-nav li a:hover{
+    color: #6AAFB6 !important;
+}
+.header-section{
+    background: url(../img/mountains.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.header-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(50, 146, 156, 0.7);
+    height: 100%;
+    width: 100%;
+    
+}
+.call-to-action{
+    background: #252525;
+    padding:20px 0px;
+}
+.header-text{
+    z-index: 5;
+}
+.card-hover:hover{
+    background: #0495a5 !important;
+    color: white;
+}
+.card-hover:hover .fab{
+    color: white !important;
+}

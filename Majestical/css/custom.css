@@ -1,0 +1,365 @@
+:root{
+    --primary-color:#FF9900;
+    --secodary-color:#E47C30;
+    --dark-color:#252525;
+    --light-color: #fefefe;
+    --body-color:#E1E1E1;
+    --gray-color: #F0F0F0;
+    --black-color:rgb(29, 26, 26);
+    --font-trebuchet: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-trebuchet);
+}
+.humberger-menu{
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    display: none;
+    cursor: pointer;
+    z-index: 5;
+    user-select: none;
+}
+.humberger-menu i{
+    font-size: 1.5rem;
+    color: #ddd;
+    display: inline-block;
+}
+.collapse{
+    height: 400px !important;
+    transition: all 0.5s;
+}
+img{
+    min-width: 100%;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-trebuchet);
+}
+body
+{
+    font-family: var(--font-trebuchet);
+    background:linear-gradient(rgb(255, 255, 255),rgb(241, 241, 241)),url(../images/pexels-ylanite-koppens-843266.jpg);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* CSS CODE FOR CREATING PRIMARY MENU SECTION */
+
+.primary-menu-area{
+    background: var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.primary-menu ul{
+    margin-left: 25px;
+}
+.primary-menu ul li a{
+    color: var(--light-color) ;
+    margin: 15px 8px;
+}
+.primary-menu ul li a:hover{
+    color: var(--primary-color) ;
+    
+}
+.uk-dropdown-nav{
+    margin: 0 !important;
+}
+.uk-dropdown-nav li a{
+    margin: 0 !important;
+    color: var(--dark-color) !important;
+}
+.active{
+    color: var(--primary-color) !important;
+}
+.social-icon{
+    margin-right: 25px;
+}
+.social-icon .fab,
+.social-icon .fa{
+    margin: 15px 8px;
+    font-size: 19px;
+    background:var(--black-color);
+    border-radius: 50%;
+    padding: 9px;
+}
+.social-icon .fab:hover,
+.social-icon .fa:hover{
+    background: var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+/* CSS CODE FOR CREATING LOGO & SLIDER SECTION  */
+.logo-section{
+    background: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+.logo-section a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    margin-left: 25px;
+}
+.logo h1{
+ display: inline;
+ color: var(--light-color);
+}
+.logo::first-letter{
+    font-size: 4rem;
+    font-family: var(--font-trebuchet);
+}
+.search{
+    width: 440px;
+    position: relative;
+    padding-top: 25px;
+}
+.search input{
+ width: 70%;
+ padding: 15px;
+ border-radius: 5px 0px 0px 5px;
+ border: none;
+ background: var(--dark-color);
+ color: var(--light-color);
+}
+::placeholder{
+    color: var(--light-color);
+    font-size: 1rem;
+}
+.search .search-btn{
+    padding: 15px 25px;
+    color: var(--light-color);
+    background: var(--secodary-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.search .search-btn:active{
+ background: var(--light-color);
+ color: var(--dark-color);
+}
+.slider-section{
+    padding: 25px;
+    background: var(--black-color);
+    padding-bottom: 0px;
+}
+.margin-line{
+    width: 100%;
+    height: 15px;
+    background: var(--primary-color);
+    box-shadow: inset 1px 1px 12px #E47C30;
+    position: relative;
+}
+.margin-line::after{
+    content: "";
+    width: 250px;
+    height: 100%;
+    background: var(--gray-color);
+    position: absolute;
+    left: 15%;
+    top: 0;
+}
+
+/* CSS CODE FOR CRATING BODY SECTION ETC */
+.body-section
+{
+    
+    padding:25px;
+    background: var(--body-color);
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+.pagination{
+    background: var(--gray-color);
+    border-bottom: 2px solid rgb(224, 224, 224);
+   
+}
+.pagination ul li{
+    display: inline-block;
+    list-style: none;
+}
+.pagination ul li a{
+    display: inline-block;
+    padding: 15px 8px;
+    text-decoration: none;
+}
+.pagination ul li a .fas{
+    color: var(--body-color);
+    font-weight: 600;
+}
+.body-section-content{
+    background: var(--light-color);
+}
+.welcome-title{
+    text-align: center;
+    padding:25px;
+    border-bottom: 2px solid rgb(230, 230, 230);
+}
+.welcome-title h1{
+    font-size: 4rem;
+    font-family: var(--font-trebuchet);
+    font-style: italic;
+    color: var(--body-color);
+}
+.welcome-title blockquote{
+   
+    font-family: var(--font-trebuchet);
+    font-style: italic;
+
+}
+
+/* CSS CODE FORE TESTIMONIAL SECTION AND TEAM SECTION  */
+.testimonial-team{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.testimonial-section{
+    width: 520px;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: var(--font-trebuchet);
+    margin-left: 25px;
+}
+.testimonial-section h2{
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+.qoutation{
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: rgba(220, 220, 220, 0.918);
+    display: flex;
+}
+.testimonial-name{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.testimonial-name h1{
+    font-size: 19px;
+}
+.testimonial-text p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 5500;
+    color: rgb(158, 150, 150);
+    text-align: justify;
+}
+
+/* TEAM SECTION  */
+.team-section{
+    width: 550px;
+    position: relative;
+    padding: 15px;
+}
+.team-section h2{
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+.team-img{
+    width: 150px;
+    height: 123px;
+    padding: 3px;
+    border: 1px solid rgb(235, 231, 231);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 13px rgb(235, 227, 227);
+}
+
+.team-text{
+    width: 400px;
+    margin-left: 20px;
+}
+.team-content{
+    display: flex;
+}
+
+/* LATEST WORK  */
+/* .shadow{
+    box-shadow: 1px 1px 12px rgb(145, 138, 138);
+} */
+.latest-work{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+.latest-work-item{
+    width: 300px;
+    position: relative;
+    margin-left: 15px;
+}
+.latest-work-item-width{
+    width: 200px;
+}
+
+.get-in-touch{
+    display: flex;
+    padding: 25px;
+    background: var(--light-color);
+}
+.twiiter{
+    font-size: 5rem;
+    color: rgb(31, 192, 255);
+    width: 200px;
+}
+.twitter-text {
+    margin-top: 32px;
+}
+.footer-section{
+    background: var(--black-color);
+    padding: 25px;
+    padding-top: 0px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: 50px;
+}
+.footer-item{
+    width: 280px;
+    margin-left: 25px;
+}
+.ul-class li{
+    border-bottom: 1px solid #E47C30;
+}
+.footer-item form input{
+    padding: 10px;
+    background: var(--dark-color);
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: var(--light-color);
+}
+.footer-item form button
+{
+    padding: 10px 19px;
+    background: var(--primary-color);
+    border: none;
+    color: var(--light-color);
+    cursor: pointer;
+}
+.footer-item form button:active
+{
+    
+    background: var(--light-color);
+    color: var(--dark-color);
+    
+}
